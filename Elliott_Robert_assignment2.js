@@ -13,28 +13,30 @@ var promptValue;
 
 
 // prompt section
-promptValue = prompt ("What is your name?")
+promptValue = prompt ("How many days are needed?", "Value between 1 and 10")
 
 //procedure
-var whoAreYou =(promptValue)
- if (promptValue === "Robby") {
- 	console.log ("Welcome back " +promptValue)
+var daysNeeded = parseInt(promptValue)
+ if (promptValue <= 5) {
+ 	console.log ("Great we can handle " +promptValue+ " days.")
  } else {
- 	console.log ("Thanks for visiting " +promptValue)
+ 	console.log ("We may have to evaluate " +promptValue+ " days.")
  
  } 
  
  //Confirm
- nameConfirm = confirm ("Your name is " +promptValue+ "?")
+ daysConfirm = confirm ("Number of days requested was " +promptValue+ "?")
 
 
-//Function
-
-
+//Boolean Function
+function booInfo (promptValue, daysConfirm)
+	while () {
+	
+	} 
 
 
 //Returned Values
-console.log ("Returned Values for promptValue: My name is " +promptValue)
+console.log ("Returned Values for promptValue: Number of days requested: " +promptValue)
 
 
 //Function Calls
