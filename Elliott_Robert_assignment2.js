@@ -24,9 +24,8 @@ var whoAreYou =(promptValue)
  
  } 
  
- 
-
-
+ //Confirm
+ nameConfirm = confirm ("Your name is " +promptValue+ "?")
 
 
 //Function
