@@ -9,36 +9,58 @@ Undetermined
 
 
 //Vars
-var promptValue; 
+var promptValue;
+var numHrs = 8;
+
+//Boolean Function
+var booInfo = function (daysNeeded, daysConfirm) {
+	while (daysNeeded > 5) 
+		daysNeeded --
+		console.log (+daysNeeded)			
+			if (daysNeeded < 5) {
+			console.log ("You shall pass!")
+			} else {
+			console.log ("You shall not pass!")
+			}
+	}
+
+//Number Function
+var numFunction = function (numHrs) {
+	for (numHrs; numHrs < 40; numHrs++)
+		if (numHrs = 40) {
+		console.log ("Less than " +numHrs)
+		} else {
+		console.log ("Not less than " +numHrs)
+		}
+	console.log ("Number of " +numHrs)
+}
 
 
-// prompt section
+//***MAIN SECTION**
+	// prompt section
+
 promptValue = prompt ("How many days are needed?", "Value between 1 and 10")
 
-//procedure
+	//procedure
 var daysNeeded = parseInt(promptValue)
- if (promptValue <= 5) {
+ if (promptValue < 5) {
  	console.log ("Great we can handle " +promptValue+ " days.")
  } else {
  	console.log ("We may have to evaluate " +promptValue+ " days.")
  
- } 
- 
- //Confirm
- daysConfirm = confirm ("Number of days requested was " +promptValue+ "?")
-
-
-//Boolean Function
-function booInfo (promptValue, daysConfirm)
-	while () {
+ };  
 	
-	} 
+	//Confirm
+daysConfirm = confirm ("Number of days requested was " +promptValue+ "?");
+	
+	//function calls
+booInfo (daysNeeded)
+var numReturn = numFunction(numHrs)
 
 
 //Returned Values
 console.log ("Returned Values for promptValue: Number of days requested: " +promptValue)
+console.log ("Returned value of " +numReturn)
 
-
-//Function Calls
 
 
