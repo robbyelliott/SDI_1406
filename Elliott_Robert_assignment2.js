@@ -22,7 +22,8 @@ var booInfo = function (daysNeeded, daysConfirm) {
 			} else {
 			console.log ("You shall not pass!")
 			}
-	}
+	return daysNeeded
+};
 
 //Number Function
 var numFunction = function (numHrs) {
@@ -33,7 +34,16 @@ var numFunction = function (numHrs) {
 		console.log ("Not less than " +numHrs)
 		}
 	console.log ("Number of " +numHrs)
-}
+	return numHrs
+};
+
+//String Function
+var stringFun = function (textDays, textHours) {
+	var explText = ("You have requested " +textDays+ " days, which will take " +textHours+ " hours.")
+	console.log (explText)
+	return explText
+
+};
 
 
 //***MAIN SECTION**
@@ -54,13 +64,16 @@ var daysNeeded = parseInt(promptValue)
 daysConfirm = confirm ("Number of days requested was " +promptValue+ "?");
 	
 	//function calls
-booInfo (daysNeeded)
+var booReturn = booInfo (daysNeeded)
 var numReturn = numFunction(numHrs)
-
+var stringReturn = stringFun (daysNeeded, numHrs)
 
 //Returned Values
-console.log ("Returned Values for promptValue: Number of days requested: " +promptValue)
-console.log ("Returned value of " +numReturn)
+console.log ("Returned value for: " +promptValue)
+console.log ("Returned value for: " +numReturn)
+console.log ("Returned value for: " +daysNeeded)
+console.log ("Returned value for: " +stringReturn)
+
 
 
 
