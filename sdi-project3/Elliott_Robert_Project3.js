@@ -44,6 +44,10 @@ var stringFun = function (textDays, textHours) {
 
 };
 
+//JSON information
+ var teamMembers = function (json2) {
+    console.log = (json2.Name)
+     };
 
 //***MAIN SECTION**
 	// prompt section
@@ -66,10 +70,12 @@ daysConfirm = confirm ("Number of days requested was " +promptValue+ "?");
 var booReturn = booInfo (daysNeeded);
 var numReturn = numFunction(numHrs);
 var stringReturn = stringFun (daysNeeded, numHrs);
+teamMembers (json2.Name)
 
 //Returned Values
 console.log ("Returned value for: " +promptValue);
 console.log ("Returned value for: " +numReturn);
 console.log ("Returned value for: " +daysNeeded);
 console.log ("Returned value for: " +stringReturn);
+console.lgo ("Team Members names " +teamMembers)
 

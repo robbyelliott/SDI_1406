@@ -4,22 +4,21 @@
 //Project 3
 
 var json2 = {
-    "Nephews": [
+    "Team": [
         {
+            "Emp_ID" : 001,
             "Name": "Todd",
-            "Mow Time": 45,
-            "Edging Time": 25
         },
          {
+            "Emp_ID" : 002,
             "Name" : "Bobby",
-            "Mow Time": 60,
-            "Edging Time": 30              
+                          
         },
         
          {
+            "Emp_ID" : 003,
             "Name" : "James",
-            "Mow Time": 90,
-            "Edging Time": 45   
+              
         }
 ]
 };
