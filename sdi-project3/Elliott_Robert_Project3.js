@@ -10,6 +10,7 @@ Project 3
 
 var promptValue;
 var numHrs = 8;
+var teamMembers = ["Todd", "Bobby", "James", "Jenn"];
 
 //Boolean Function
 var booInfo = function (daysNeeded, daysConfirm) {
@@ -44,10 +45,6 @@ var stringFun = function (textDays, textHours) {
 
 };
 
-//JSON information
- var teamMembers = function (json2) {
-    console.log = (json2.Name)
-     };
 
 //***MAIN SECTION**
 	// prompt section
@@ -65,17 +62,17 @@ var daysNeeded = parseInt(promptValue);
 	
 	//Confirm
 daysConfirm = confirm ("Number of days requested was " +promptValue+ "?");
-	
+console.log ("The following people can work on the task " +teamMembers+ ".")	
 	//function calls
 var booReturn = booInfo (daysNeeded);
 var numReturn = numFunction(numHrs);
 var stringReturn = stringFun (daysNeeded, numHrs);
-teamMembers (json2.Name)
+teamMembers.push ("Martin")
+console.log ("The following people can work on the task " +teamMembers+ ".")
 
 //Returned Values
 console.log ("Returned value for: " +promptValue);
 console.log ("Returned value for: " +numReturn);
 console.log ("Returned value for: " +daysNeeded);
 console.log ("Returned value for: " +stringReturn);
-console.lgo ("Team Members names " +teamMembers)
 
