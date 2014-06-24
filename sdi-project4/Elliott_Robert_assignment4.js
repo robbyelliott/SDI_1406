@@ -19,9 +19,16 @@ var phFuncReturn;
             };
         
         //Scenario 4: Title-Case a string
-            var splitString = function (val){
-              var sepString = val.split(" ")  
-                console.log (sepString)
+            upperCaseWords = function (val){
+                var sepString = val.split(" ");  
+                    for (var i=0 ; i < sepString.length ; i++) {
+                        var eachWord = sepString[i];
+                        var firstLetter = eachWord.substring (0,1);
+                        var remainLetter = eachWord.substring (1, eachWord.length - 0);
+                        sepString[i] = firstLetter.toUpperCase () + remainLetter;
+                    };
+                        console.log (sepString.join (" "));
+                
             };
         
 
@@ -32,5 +39,6 @@ var phFuncReturn;
             phNumValidate (promptNumReturn);
             
 	//Scenario 4: String for title-case
-            var stringTitle = splitString("i think lines mostly filler.");
-            
+            var stringTitle = upperCaseWords("this line is filler");
+        
+        
