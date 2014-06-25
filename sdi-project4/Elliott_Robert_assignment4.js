@@ -19,7 +19,7 @@ var phFuncReturn;
             };
         
         //Scenario 4: Title-Case a string
-            upperCaseWords = function (val){
+            var upperCaseWords = function (val){
                 var sepString = val.split(" ");  
                     for (var i=0 ; i < sepString.length ; i++) {
                         var eachWord = sepString[i];
@@ -31,6 +31,18 @@ var phFuncReturn;
                 
             };
         
+        //Scenario 5: Give a string different seperators. 
+            var changeCharcater = function (text){
+                var chgText = text;
+                var textIndex = chgText.indexOf(",")
+                while (textIndex != -1) {
+                    chgText = chgText.replace (",", " &");
+                    textIndex = chgText.indexOf (",")
+                };
+                console.log (chgText);
+            };
+            
+        
 
 //Main Code
 	//Scenario 1: String for phone number
@@ -40,5 +52,10 @@ var phFuncReturn;
             
 	//Scenario 4: String for title-case
             var stringTitle = upperCaseWords("this line is filler");
-        
-        
+            
+        //Scenario 5: String for different sperators.
+            changeCharcater("Mario, Luigi, Peach");
+            
+            
+            
+            
