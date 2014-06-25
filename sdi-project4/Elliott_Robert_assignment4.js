@@ -42,7 +42,18 @@ var phFuncReturn;
                 console.log (chgText);
             };
             
+        //Scenario 6: Format a number to a specific length
+           var formatNum = function (setNumber) {
+             var resultFormat = setNumber.toFixed (2);
+             console.log (resultFormat)
+           
+           };
         
+        //Scenario 
+
+
+
+
 
 //Main Code
 	//Scenario 1: String for phone number
@@ -56,6 +67,5 @@ var phFuncReturn;
         //Scenario 5: String for different sperators.
             changeCharcater("Mario, Luigi, Peach");
             
-            
-            
-            
+        //Scenario 6: Number to format
+            var sendNumTo = formatNum (123.456789)
