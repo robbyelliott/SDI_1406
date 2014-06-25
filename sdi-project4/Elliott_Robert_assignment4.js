@@ -37,7 +37,7 @@ var phFuncReturn;
                 var textIndex = chgText.indexOf(",")
                 while (textIndex != -1) {
                     chgText = chgText.replace (",", " &");
-                    textIndex = chgText.indexOf (",")
+                    textIndex = chgText.indexOf (",");
                 };
                 console.log (chgText);
             };
@@ -45,14 +45,26 @@ var phFuncReturn;
         //Scenario 6: Format a number to a specific length
            var formatNum = function (setNumber) {
              var resultFormat = setNumber.toFixed (2);
-             console.log (resultFormat)
+             console.log (resultFormat);
            
            };
         
-        //Scenario 
+        //Scenario 9: Number as a String to a Number
+            var convertString = function (numText){
+                var numFormated = parseInt(numText); {
+                  console.log (numFormated);  
+                };
+                
+            };
 
-
-
+        //Scenario 11: Add numbers within an array.
+            var addArray = function (numVar){
+             for (var i = 0; i < numVar.length; i++){
+               result += numVar[i];
+               console.log ()
+             };
+             
+            };
 
 
 //Main Code
@@ -68,4 +80,14 @@ var phFuncReturn;
             changeCharcater("Mario, Luigi, Peach");
             
         //Scenario 6: Number to format
-            var sendNumTo = formatNum (123.456789)
+            var sendNumTo = formatNum (123.456789);
+        
+        //Scenario 9: String to number
+            var stringNumber = convertString ("421");
+        
+        //Scenario 11: Add numbers within an array.
+            var inputNumber = addArray (1, 2, "3", "eggs", 2, "bacon", 5);
+        
+        
+        
+            
