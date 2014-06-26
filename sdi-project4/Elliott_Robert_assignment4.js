@@ -18,6 +18,17 @@ var phFuncReturn;
                 };
             };
         
+        //Scenario 3: Is the string a URL.
+            var valURL = function (value){
+                var valHTTP = value.contains("http://");
+                var valHTTPS = value.contains("https://");
+                if (valHTTP === true) {
+                    console.log ("http value is true")
+                }  if (valHTTPS === true) {
+                    console.log ("https value is true")
+                        }; 
+                };
+                
         //Scenario 4: Title-Case a string
             var upperCaseWords = function (val){
                 var sepString = val.split(" ");  
@@ -57,22 +68,19 @@ var phFuncReturn;
                 
             };
 
-        //Scenario 11: Add numbers within an array.
-            var addArray = function (numVar){
-             for (var i = 0; i < numVar.length; i++){
-               result += numVar[i];
-               console.log ()
-             };
-             
-            };
 
+    
 
 //Main Code
 	//Scenario 1: String for phone number
 	    promptNumReturn = ("123-456-7000");
             console.log (promptNumReturn);
             phNumValidate (promptNumReturn);
-            
+    
+    
+        //Scenario 3: Does the string contain certain values.
+            var stringURL = valURL("http://www.facebook.com")
+        
 	//Scenario 4: String for title-case
             var stringTitle = upperCaseWords("this line is filler");
             
@@ -85,9 +93,5 @@ var phFuncReturn;
         //Scenario 9: String to number
             var stringNumber = convertString ("421");
         
-        //Scenario 11: Add numbers within an array.
-            var inputNumber = addArray (1, 2, "3", "eggs", 2, "bacon", 5);
-        
-        
-        
+   
             
